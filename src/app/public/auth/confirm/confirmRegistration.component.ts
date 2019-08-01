@@ -1,8 +1,8 @@
-import {Component, OnDestroy, OnInit} from "@angular/core";
-import {ActivatedRoute, Router} from "@angular/router";
-import {UserRegistrationService} from "../../../service/user-registration.service";
-import {UserLoginService} from "../../../service/user-login.service";
-import {LoggedInCallback} from "../../../service/cognito.service";
+import {Component, OnDestroy, OnInit} from '@angular/core';
+import {ActivatedRoute, Router} from '@angular/router';
+import {UserRegistrationService} from '../../../service/user-registration.service';
+import {UserLoginService} from '../../../service/user-login.service';
+import {LoggedInCallback} from '../../../service/cognito.service';
 
 @Component({
     selector: 'awscognito-angular2-app',
@@ -57,12 +57,12 @@ export class RegistrationConfirmationComponent implements OnInit, OnDestroy {
     }
 
     cognitoCallback(message: string, result: any) {
-        if (message != null) { //error
+        if (message != null) { // error
             this.errorMessage = message;
-            console.log("message: " + this.errorMessage);
-        } else { //success
-            //move to the next step
-            console.log("Moving to securehome");
+            console.log('message: ' + this.errorMessage);
+        } else { // success
+            // move to the next step
+            console.log('Moving to securehome');
             // this.configs.curUser = result.user;
             this.router.navigate(['/securehome']);
         }

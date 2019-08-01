@@ -3,12 +3,12 @@ export const environment = {
 
     region: 'us-east-1',
 
-    identityPoolId: 'us-east-1:fbe0340f-9ffc-4449-a935-bb6a6661fd53',
-    userPoolId: 'us-east-1_PGSbCVZ7S',
-    clientId: 'hh5ibv67so0qukt55c5ulaltk',
+    identityPoolId: 'us-east-1:90609aad-9cc4-46ef-a82d-522c06587e31',
+    userPoolId: 'us-east-1_ASlZLEfpS',
+    clientId: '5ddlapjigugnu1ftj63g9e56dc',
 
-    rekognitionBucket: 'rekognition-pics',
-    albumName: "usercontent",
+    rekognitionBucket: 'skatemapper-pics',
+    albumName: 'usercontent',
     bucketRegion: 'us-east-1',
 
     ddbTableName: 'LoginTrail',
